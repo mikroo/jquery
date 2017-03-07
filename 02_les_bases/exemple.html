@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hello World</title>
+</head>
+<body>
+	<ul class="rouge">
+      <li class="impair">premier élément de la liste à puces</li>
+      <li class="pair">deuxième élément de la liste à puces</li>
+      <li class="impair">troisième élément de la liste à puces</li>
+    </ul>
+    <div>
+      <ul class="bleu">
+        <li class="impair">premier élément de la liste à puces</li>
+        <li class="pair">deuxième élément de la liste à puces</li>
+        <li class="impair">troisième élément de la liste à puces</li>
+      </ul>
+    </div>
+    <ol class="rouge">
+      <li>premier élément de la liste numérotée</li>
+      <li>deuxième élément de la liste numérotée</li>
+      <li>troisième élément de la liste numérotée</li>
+    </ol>
+
+	<script src="../jquery-1.12.4.js"></script>
+	<script>
+		$(function(){
+			// Insérer le code jQuery ici
+			console.log($('li[class="impair"]'));
+			$(".rouge").fadeOut("slow", function(){
+				$(this).fadeIn("slow");
+			});
+
+
+			$(".rouge").css("background",'red').css('color','yellow');
+		});		
+	</script>
+</body>
+</html>
